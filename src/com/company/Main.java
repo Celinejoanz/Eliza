@@ -33,17 +33,15 @@ public class Main {
                 output += a[i] + " ";
             }
 
-            int qualiferIndex = generate.nextInt(qualifier.length - 1);
-            int hedgeIndex = generate.nextInt(hedges.length - 1);
+            int qualiferIndex = generate.nextInt(qualifier.length);
+            int hedgeIndex = generate.nextInt(hedges.length);
 
-            String q = qualifier[qualiferIndex] + output + "?";
+            String q = qualifier[qualiferIndex] +output + "?" ;
             String h = hedges[hedgeIndex];
             String[] m = {q, h};
 
 
-            //System.out.println(m[generate.nextInt(m.length -1)]);
-            System.out.println(q);
-
+            System.out.println(m[generate.nextInt(m.length)]);
 
             System.out.println("Enter your response here or Q to quit");
             // use same name as the initial variable
